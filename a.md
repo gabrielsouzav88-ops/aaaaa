@@ -1,21 +1,3 @@
-getgenv().Config = {
-	Misc = {
-		PsCode = "",
-		FastMode = false,
-		WebhookURL = "",
-		FpsCap = 25,
-	},
-	CircleQueue = {
-		Enabled = true,
-		Order = {
-			"", -- First priority - goes to circle first
-			"", -- Second priority - waits for Account1
-			"", -- Third priority - waits for Account1 and Account2
-			"", -- Add more as needed
-		},
-	},
-}
-
 if LPH_OBFUSCATED then
 	LRM_INIT_SCRIPT(function()
 		function isIdInList(id, ids)
